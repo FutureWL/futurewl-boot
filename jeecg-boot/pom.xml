@@ -4,7 +4,7 @@
   <artifactId>jeecg-boot-parent</artifactId>
   <version>2.0.1</version>
   <packaging>pom</packaging>
-  
+
   	<parent>
 	    <groupId>org.springframework.boot</groupId>
 	    <artifactId>spring-boot-starter-parent</artifactId>
@@ -12,12 +12,11 @@
 	    <relativePath/>
 	</parent>
 
-
 	<modules>
 		<module>jeecg-boot-base-common</module>
 		<module>jeecg-boot-module-system</module>
-	</modules> 
-	
+	</modules>
+
 	<distributionManagement>
 	  	<repository>
             <id>jeecg</id>
@@ -30,7 +29,7 @@
             <url>http://maven.jeecg.com:8090/nexus/content/repositories/snapshots/</url>
 	    </snapshotRepository>
 	</distributionManagement>
-	
+
 	<repositories>
 		<repository>
             <id>aliyun</id>
@@ -49,7 +48,7 @@
 			</snapshots>
         </repository>
 	</repositories>
-	
+
     <properties>
         <jeecgboot.common.version>2.0.1</jeecgboot.common.version>
         <java.version>1.8</java.version>
@@ -59,7 +58,7 @@
         <druid.version>1.1.10</druid.version>
         <commons.version>2.6</commons.version>
     </properties>
-    
+
 	<dependencies>
 		<!--集成springmvc框架并实现自动配置 -->
 		<dependency>
@@ -88,7 +87,7 @@
 			<artifactId>spring-boot-devtools</artifactId>
 			<optional>true</optional>
 		</dependency> -->
-		
+
 		<!-- commons -->
 		<dependency>
 			<groupId>commons-io</groupId>
@@ -100,47 +99,47 @@
 			<artifactId>commons-lang</artifactId>
 			<version>${commons.version}</version>
 		</dependency>
-		
+
 		<!-- freemarker -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
-		
+
 		<!-- Lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
-		
+
 		<!-- mybatis-plus -->
 		 <dependency>
 	        <groupId>com.baomidou</groupId>
 	        <artifactId>mybatis-plus-boot-starter</artifactId>
 	        <version>${mybatis-plus.version}</version>
 	    </dependency>
-		
+
 		<!-- druid -->
        <dependency>
 		   <groupId>com.alibaba</groupId>
 		   <artifactId>druid-spring-boot-starter</artifactId>
 		   <version>${druid.version}</version>
 		</dependency>
-		
+
 		<!-- 动态数据源 -->
 		<dependency>
 		  <groupId>com.baomidou</groupId>
 		  <artifactId>dynamic-datasource-spring-boot-starter</artifactId>
 		  <version>2.5.2</version>
 		</dependency>
-				
+
 		<!-- json -->
 		<dependency>
          	<groupId>com.alibaba</groupId>
          	<artifactId>fastjson</artifactId>
          	<version>1.2.56</version>
         </dependency>
-      
+
 		<!--mysql-->
 		<dependency>
 		   <groupId>mysql</groupId>
@@ -161,27 +160,27 @@
 			<version>7.2.1.jre8</version>
 			<scope>runtime</scope>
 		</dependency>
-		
+
 		 <!-- Quartz定时任务 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-quartz</artifactId>
         </dependency>
-        
+
 		<!--JWT-->
 		<dependency>
 			<groupId>com.auth0</groupId>
 			<artifactId>java-jwt</artifactId>
 			<version>3.7.0</version>
 		</dependency>
-		
+
 		<!--shiro-->
 		<dependency>
 		    <groupId>org.apache.shiro</groupId>
 		    <artifactId>shiro-spring-boot-starter</artifactId>
 		    <version>1.4.0</version>
 		</dependency>
-		
+
 		<!-- Swagger API文档 -->
         <dependency>
 		    <groupId>io.springfox</groupId>
@@ -203,8 +202,8 @@
 			<artifactId>springfox-bean-validators</artifactId>
 			<version>2.9.2</version>
 		</dependency>
-		
-		
+
+
 		<!-- Redis -->
 		<dependency>
 			 <groupId>org.springframework.boot</groupId>
@@ -214,7 +213,7 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-pool2</artifactId>
         </dependency>
-        
+
 		<!-- 代码生成器 -->
 		<!-- 如果下载失败，看这个链接http://jeecg-boot.mydoc.io/?t=344850 -->
 		<dependency>
@@ -222,7 +221,7 @@
 			<artifactId>codegenerate</artifactId>
 			<version>1.0.5</version>
 		</dependency>
-		
+
         <!-- AutoPoi Excel工具类-->
 		<dependency>
 			<groupId>org.jeecgframework</groupId>
